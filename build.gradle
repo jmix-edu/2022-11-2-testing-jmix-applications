@@ -40,6 +40,10 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
+    testImplementation 'org.testcontainers:postgresql:1.17.6'
+    testImplementation 'io.jmix.ui:jmix-ui-test-assist'
+    testRuntimeOnly 'org.postgresql:postgresql:42.5.0'
 }
 
 test {
